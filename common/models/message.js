@@ -7,6 +7,12 @@ module.exports = function(Message) {
       id: req.accessToken.userId,
     };
 
+    if (!req.body.data.relationships.room.data) {
+      req.body.data.relationships.room.data = {
+        id: 1,
+      };
+    }
+
     next();
   });
 };

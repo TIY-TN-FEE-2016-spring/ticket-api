@@ -1,0 +1,6 @@
+{
+  "loopback-component-jsonapi": {},
+  "loopback-component-explorer": {
+    "mountPath": "/explorer"
+  }
+}

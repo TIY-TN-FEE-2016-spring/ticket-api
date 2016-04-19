@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "pg"
+  },
+  "AccessToken": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "pg",
+    "public": false
+  },
+  "coffee-shop": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "review": {
+    "dataSource": "pg",
+    "public": true
+  },
+  "reviewer": {
+    "dataSource": "pg",
+    "public": true
+  }
+}

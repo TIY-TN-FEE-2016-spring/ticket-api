@@ -1,5 +1,5 @@
 {
-  "name": "reviewer",
+  "name": "chatter",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -8,10 +8,10 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "reviews": {
+    "messages": {
       "type": "hasMany",
-      "model": "review",
-      "foreignKey": "publisher-id"
+      "model": "message",
+      "foreignKey": ""
     }
   },
   "acls": [],

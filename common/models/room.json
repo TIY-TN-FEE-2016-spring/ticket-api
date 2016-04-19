@@ -1,15 +1,11 @@
 {
-  "name": "coffee-shop",
+  "name": "room",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "city": {
-      "type": "string",
-      "required": true
-    },
     "name": {
       "type": "string",
       "required": true
@@ -17,14 +13,9 @@
   },
   "validations": [],
   "relations": {
-    "reviews": {
+    "messages": {
       "type": "hasMany",
-      "model": "review",
-      "foreignKey": ""
-    },
-    "reviewers": {
-      "type": "hasMany",
-      "model": "reviewer",
+      "model": "message",
       "foreignKey": ""
     }
   },

@@ -32,15 +32,15 @@
     "dataSource": "pg",
     "public": false
   },
-  "coffee-shop": {
+  "chatter": {
     "dataSource": "pg",
     "public": true
   },
-  "review": {
+  "message": {
     "dataSource": "pg",
     "public": true
   },
-  "reviewer": {
+  "room": {
     "dataSource": "pg",
     "public": true
   }

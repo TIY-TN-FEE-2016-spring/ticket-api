@@ -1,24 +1,22 @@
 {
-  "name": "room",
-  "base": "PersistedModel",
+  "name": "player",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "username": {
       "type": "string",
+      "required": true
+    },
+    "tickets": {
+      "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "messages": {
-      "type": "hasMany",
-      "model": "message",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

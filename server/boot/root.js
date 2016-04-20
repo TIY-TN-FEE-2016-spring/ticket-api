@@ -24,9 +24,7 @@ module.exports = function(server) {
       'ACL',
       'RoleMapping',
       'Role',
-      'room',
-      'chatter',
-      'message',
+      'player',
     ];
 
     Promise.all(models.map(function(model) {
@@ -35,16 +33,6 @@ module.exports = function(server) {
       res.send({
         status: 200,
         message: 'Migration Complete',
-      });
-    });
-  });
-
-  router.get(`/seed`, function(req, res) {
-    server.models.Room.create([{
-      name: 'general',
-    }], function () {
-      res.send({
-        message: 'rooms created',
       });
     });
   });

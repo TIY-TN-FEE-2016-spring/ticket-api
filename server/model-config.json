@@ -32,15 +32,7 @@
     "dataSource": "pg",
     "public": false
   },
-  "chatter": {
-    "dataSource": "pg",
-    "public": true
-  },
-  "message": {
-    "dataSource": "pg",
-    "public": true
-  },
-  "room": {
+  "player": {
     "dataSource": "pg",
     "public": true
   }
